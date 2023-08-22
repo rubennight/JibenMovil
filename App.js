@@ -11,14 +11,14 @@ import preparaditoPromo from './assets/preparaditoPromo.png';
 import DrinksCard from './components/DrinksCard.js';
 
 function preparadito(src, nombre, descripcion, precioLitro, precioMedio){
-  return {src, nombre, descripcion}
+  return {src, nombre, descripcion, precioLitro, precioMedio}
 }
 
 const preparaditos = [
-  preparadito(preparaditoAzul, 'VibraVodka', 'Vodka acompañado de una bebida energética con sabor a arándano, refresco de lima y toques de diversión con gomitas.'),
-  preparadito(preparaditoRojo, 'PulsoChill', 'Vodka mezclado con una refrescante combinación de bebida energética, toques suaves de granadina y soda de fresa.'),
-  preparadito(preparaditoChamoy, 'Chamoy', 'Un preparadito, único y de tintes deliciosos'),
-  preparadito(preparaditoLeonRojo, 'Leon Jiben', 'Un Leon Rojo, fusión audaz de salsas negras y sal rosa, realzada con un escarchado de chile en polvo con chamoy que despierta tus sentidos. Añadiendo un toque vibrante, el limón fresco se entrelaza con el distintivo lemon pepper. Una experiencia culinaria de valiente sabor y pasión.' )
+  preparadito('https://i.imgur.com/A3rRuzd.png', 'VibraVodka', 'Vodka acompañado de una bebida energética con sabor a arándano, refresco de lima y toques de diversión con gomitas.', '100.00', '40.00'),
+  preparadito('https://i.imgur.com/77eGyctt.png', 'PulsoChill', 'Vodka mezclado con una refrescante combinación de bebida energética, toques suaves de granadina y soda de fresa.', '100.00', '40.00'),
+  preparadito('https://i.imgur.com/LYTq3xJt.png', 'Chamoy', 'Un preparadito, único y de tintes deliciosos', '100', '40'),
+  preparadito('https://i.imgur.com/abScrcCt.png', 'Leon Jiben', 'Un Leon Rojo, fusión audaz de salsas negras y sal rosa, realzada con un escarchado de chile en polvo con chamoy que despierta tus sentidos. Añadiendo un toque vibrante, el limón fresco se entrelaza con el distintivo lemon pepper. Una experiencia culinaria de valiente sabor y pasión.', '100.00','80.00')
   ];
 
 function App() {
@@ -43,6 +43,8 @@ function App() {
           src={preparadito.src}
           nombre={preparadito.nombre}
           descripcion={preparadito.descripcion}
+          precioLitro={preparadito.precioLitro}
+          precioMedio={preparadito.precioMedio}
         />
       ))}
 
