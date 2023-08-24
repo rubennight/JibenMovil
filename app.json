@@ -3,11 +3,12 @@
     "name": "JibenMovil",
     "slug": "JibenMovil",
     "version": "1.0.0",
+    "main": "App.js",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/El-jiben-Logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
