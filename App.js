@@ -12,12 +12,12 @@ const Stack = createStackNavigator();
  function App() {
   return (
     <Provider store={store}>
-      <NavigationContainer>      
-        <Stack.Navigator initialRouteName="App">
-          <Stack.Screen name="App" component={AppScreen} />
-          <Stack.Screen name="Ordenar" component={OrdenarScreen} />
-        </Stack.Navigator>      
-      </NavigationContainer>
+        <NavigationContainer>      
+            <Stack.Navigator initialRouteName="App">
+                <Stack.Screen name="App" component={AppScreen} options={{ headerShown: false }} />
+                <Stack.Screen name="Ordenar" component={OrdenarScreen} options={{ headerShown: true }} />
+            </Stack.Navigator>      
+        </NavigationContainer>
     </Provider>  
   );
 }
